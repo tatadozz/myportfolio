@@ -18,18 +18,14 @@ export default function Home() {
       <Header />
       <main>
         {/* Hero */}
-        <div className="container mx-auto h-screen flex flex-col md:flex-row items-center bg-yellow-700">
+        <div className="w-4/5 mx-auto h-screen flex flex-col sm:w-2/3 md:w-1/2 flex-row items-center bg-yellow-400">
           {/* Left */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center w-1/2b bg-red-400">
             <h1 className="text-6xl">{t("hero.h1")}</h1>
-            <Typical 
-              steps={t("hero.p")}
-              wrapper="p"
-              loop={1}
-            />
+            <p>{t("hero.p")}</p>
           </div>
           {/* Right */}
-          <div className="">
+          <div className="w-1/2 bg-green-400">
             <Image 
               src="/assets/img/me.jpg"
               alt="Me at university"
