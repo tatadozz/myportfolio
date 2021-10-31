@@ -17,23 +17,26 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        {/* Hero */}
-        <div className="w-4/5 mx-auto h-screen flex flex-col sm:w-2/3 md:w-1/2 flex-row items-center bg-yellow-400">
-          {/* Left */}
-          <div className="flex flex-col justify-center w-1/2b bg-red-400">
-            <h1 className="text-6xl">{t("hero.h1")}</h1>
-            <p>{t("hero.p")}</p>
+        <section className="w-4/5 mx-auto">
+          {/* Hero */}
+          <div className="flex flex-col items-center mx-auto">
+              <h1 className="text-5xl mt-10 text-center font-bold py-5">{t("hero.h1")}</h1>
+              <p className="text-center text-xl font-light pb-5">{t("hero.p")}</p>
+              <Image 
+                src="/assets/img/me.jpg"
+                alt="Me at university"
+                width={250}
+                height={250}
+                className="rounded-full"
+              />
           </div>
-          {/* Right */}
-          <div className="w-1/2 bg-green-400">
-            <Image 
-              src="/assets/img/me.jpg"
-              alt="Me at university"
-              width={400}
-              height={400}
-            />
-          </div>
-        </div>
+        </section>
+        <section className="bg-blue-500 mt-20">
+            <div className="w-4/5 mx-auto py-10 md:w-3/5">
+              <h2 className="text-4xl text-center text-white font-semibold">{t("about.h2")}</h2>
+              <p className="text-md text-center text-white py-5">{t("about.p")}</p>
+            </div>
+        </section>
       </main>
 
     </div>
