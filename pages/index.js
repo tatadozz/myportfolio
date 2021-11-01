@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import '../translation/i18n';
 import { useTranslation } from 'react-i18next';
 import Typical from 'react-typical'
@@ -31,12 +32,19 @@ export default function Home() {
               />
           </div>
         </section>
-        <section className="bg-blue-500 mt-20">
+        {/* About */}
+        <section className="mt-20" style={{backgroundColor: "#fedd00"}}>
             <div className="w-4/5 mx-auto py-10 md:w-3/5">
-              <h2 className="text-4xl text-center text-white font-semibold">{t("about.h2")}</h2>
-              <p className="text-md text-center text-white py-5">{t("about.p")}</p>
+              <h2 className="text-4xl text-center text-black font-semibold">{t("about.h2")}</h2>
+              <p className="text-md text-center text-black py-5">{t("about.p")}</p>
             </div>
         </section>
+        {/* Projects */}
+        <section className="grid-cols-1 w-4/5 mx-auto py-10 md:w-3/5">
+            
+        </section>
+        {/* Footer */}
+        <Footer />
       </main>
 
     </div>

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.5",
     "i18next": "^21.3.2",
     "i18next-browser-languagedetector": "^6.1.2",
     "next": "11.1.2",
