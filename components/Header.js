@@ -6,7 +6,7 @@ function Header() {
     const { t, i18n } = useTranslation();
 
     return (
-        <header className="flex items-center justify-center h-20 sticky top-0 z-50 bg-white shadow-md">
+        <header className="flex items-center justify-center h-20">
             <div className="flex items-center justify-between w-4/5">
                 <h1><a href="">{t("app.firstname")} {t("app.lastname")}</a></h1>
                 <nav className="flex">

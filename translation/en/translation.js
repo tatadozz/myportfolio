@@ -21,5 +21,17 @@ export default {
     projects: {
         h2: "My projects",
         p: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    exp: {
+        title: "My experiences",
+        exp1: {title: "Web developer - Internship", company: "WeeCoop | Savoie, France", item1: "Redesign of a website", item2: "Introduction to SEO", item3: "Integration of mock-ups", item4: "Using JelixPHP", item5: "Compliance testing"},
+        exp2: {title: "Web & Mobile developer - Sandwich course", company: "WeeCoop | Savoie, France", item1: "Integration of new designs", item2: "Generating a PDF in PHP", item3: "Redesign of a mobile application", item4: "Back-office administration"},
+        exp3: {},
+    },
+    skills: {
+        title: "My skills",
+        sk1: {title: "Web",  item1: "Tailwind, Bootstrap", item2: "React", item3: "PostgreSQL, MySQL", item4: "JelixPHP, Symfony"},
+        sk2: {title: "Mobile", item1: "Android, ReactNative", item2: "API", item3: "Responsive"},
+        sk3: {title: "Design", item1: "Figma"},
     }
 }

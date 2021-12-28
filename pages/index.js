@@ -5,6 +5,8 @@ import Footer from '../components/Footer'
 import '../translation/i18n';
 import { useTranslation } from 'react-i18next';
 import Typical from 'react-typical'
+import Experiences from "../components/Experiences";
+import Skills from "../components/Skills";
 
 export default function Home() {
   const { t, i18n } = useTranslation();
@@ -39,11 +41,11 @@ export default function Home() {
               <p className="text-md text-center text-black py-5">{t("about.p")}</p>
             </div>
         </section>
-        {/* Projects */}
-        <section className="grid-cols-1 w-4/5 mx-auto py-10 md:w-3/5">
-            
-        </section>
-        {/* Footer */}
+          {/* Skills */}
+          <Skills />
+          {/* Exp */}
+          <Experiences />
+          {/* Footer */}
         <Footer />
       </main>
 
