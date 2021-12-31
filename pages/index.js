@@ -42,9 +42,19 @@ export default function Home() {
             </div>
         </section>
           {/* Skills */}
-          <Skills />
+          <section className="grid grid-cols-1 gap-4 p-12 md:grid-cols-2 lg:grid-cols-4">
+              <Skills title={"HTML"} url={'https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png'} text={t("skills.i1")}/>
+              <Skills title={"CSS, SCSS"} url={'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png'} text={t("skills.i2")}/>
+              <Skills title={"JS"} url={'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png'} text={t("skills.i3")}/>
+              <Skills title={"PHP"} url={'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png'} text={t("skills.i4")}/>
+              <Skills title={"SQL"} url={'https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png'} text={t("skills.i5")}/>
+              <Skills title={"TailwindCSS"} url={'https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg'} text={t("skills.i6")}/>
+              <Skills title={"React, React Native"} url={'https://d12i7q49526cmu.cloudfront.net/media/original_images/React_Logo.png'} text={t("skills.i7")}/>
+              <Skills title={"Figma"} url={'https://cdn.worldvectorlogo.com/logos/figma-1.svg'} text={t("skills.i8")}/>
+              <Skills title={"Adobe Photoshop"} url={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png'} text={t("skills.i9")}/>
+          </section>
           {/* Exp */}
-          <Experiences />
+          <Experiences title={t("exp.i1.title")} url={'/../public/assets/img/project1.png'} text={t("exp.i1.text")} subtitle={t("exp.integration")} link={'https://github.com/tatadozz/tpintegrationlpdim'}/>
           {/* Footer */}
         <Footer />
       </main>

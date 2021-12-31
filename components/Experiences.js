@@ -2,34 +2,24 @@ import '../translation/i18n';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image'
 
-function Experiences() {
+function Experiences({title, url, text, subtitle, link}) {
     const { t, i18n } = useTranslation();
 
     return (
-        <div className="my-4">
-            <h3 className="text-center text-3xl font-medium	">{t("exp.title")}</h3>
-            <div className="flex items-center justify-around my-4">
-                <div className="border-2 p-4 h-96 border-black rounded-md">
-                    <h5 className="text-center text-lg font-medium">{t("exp.exp2.title")}</h5>
-                    <h6 className="py-2 text-center text-md font-medium">{t("exp.exp2.company")}</h6>
-                    <ul className="py-2">
-                        <li className="py-2">- {t("exp.exp2.item1")}</li>
-                        <li className="py-2">- {t("exp.exp2.item2")}</li>
-                        <li className="py-2">- {t("exp.exp2.item3")}</li>
-                        <li className="py-2">- {t("exp.exp2.item4")}</li>
-                    </ul>
-                </div>
-                <div className="border-2 p-4 h-96 border-black rounded-md">
-                    <h5 className="text-center text-lg font-medium">{t("exp.exp1.title")}</h5>
-                    <h6 className="py-2 text-center text-md font-medium">{t("exp.exp1.company")}</h6>
-                    <ul className="py-2">
-                        <li className="py-2">- {t("exp.exp1.item1")}</li>
-                        <li className="py-2">- {t("exp.exp1.item2")}</li>
-                        <li className="py-2">- {t("exp.exp1.item3")}</li>
-                        <li className="py-2">- {t("exp.exp1.item4")}</li>
-                        <li className="py-2">- {t("exp.exp1.item5")}</li>
-                    </ul>
-                </div>
+        <div className="p-10">
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+                <Image className="w-full" src={url} alt={title} width={80} height={40} layout={"responsive"}/>
+                    <div className="px-6 py-4">
+                        <div className="font-bold text-xl mb-2">{title}</div>
+                        <p className="text-gray-700 text-base">
+                            {text}
+                        </p>
+                    </div>
+                    <div className="px-6 pt-4 pb-2">
+                        <span
+                            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{subtitle}</span>
+                        <a href={link}>Show more</a>
+                    </div>
             </div>
         </div>
     )
