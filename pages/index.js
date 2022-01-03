@@ -42,7 +42,7 @@ export default function Home() {
             </div>
         </section>
           {/* Skills */}
-          <section className="grid grid-cols-1 gap-4 p-12 md:grid-cols-2 lg:grid-cols-4">
+          <section className="grid grid-cols-1 gap-4 p-12 md:grid-cols-2 lg:grid-cols-3">
               <Skills title={"HTML"} url={'https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png'} text={t("skills.i1")}/>
               <Skills title={"CSS, SCSS"} url={'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png'} text={t("skills.i2")}/>
               <Skills title={"JS"} url={'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png'} text={t("skills.i3")}/>
