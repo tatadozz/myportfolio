@@ -19,9 +19,6 @@ i18n
       escapeValue: false, // not needed for react as it escapes by default
     },
     resources: {
-      fr: {
-        translation: fr
-      },
       en: {
         translation: en
       }
