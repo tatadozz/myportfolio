@@ -29,6 +29,10 @@ export default {
             title: "Integration of a mockups",
             text: "I integrated mockups for a school projects during 12H. Thanks to this project I have improved greatly."
         },
+        i2: {
+            title: "Create a mobile application in Flutter",
+            text: "We created a Flutter mobile application for school project. The subject choice was free, so we chose the cryptocurrency. We did mockups on paper and coded for 6 weeks. We call nomics API for the informations."
+        },
     },
     skills: {
         title: "My skills",

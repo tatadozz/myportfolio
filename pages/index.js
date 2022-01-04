@@ -55,6 +55,7 @@ export default function Home() {
           </section>
           {/* Exp */}
           <Experiences title={t("exp.i1.title")} url={'/../public/assets/img/project1.png'} text={t("exp.i1.text")} subtitle={t("exp.integration")} link={'https://github.com/tatadozz/tpintegrationlpdim'}/>
+          <Experiences title={t("exp.i2.title")} url={'/../public/assets/img/project2.png'} text={t("exp.i2.text")} subtitle={t("exp.integration")} link={'https://github.com/Lekta23/notreprojet'}/>
           {/* Footer */}
         <Footer />
       </main>
