@@ -9,7 +9,6 @@ function Skills({title, url, text}) {
         <div className="bg-white p-10 rounded-lg shadow-md">
             <div className="flex justify-between">
                 <h3 className="text-xl font-bold pr-2">{title}</h3>
-                <img src={url} className="max-w-20 max-h-10" />
             </div>
             <p className="py-4">{text}</p>
         </div>
