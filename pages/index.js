@@ -35,14 +35,15 @@ export default function Home() {
           </div>
         </section>
         {/* About */}
-        <section className="mt-20" style={{backgroundColor: "#fedd00"}}>
+        <section className="mt-20 mb-10" style={{backgroundColor: "#fedd00"}}>
             <div className="w-4/5 mx-auto py-10 md:w-3/5">
               <h2 className="text-4xl text-center text-black font-semibold">{t("about.h2")}</h2>
               <p className="text-md text-center text-black py-5">{t("about.p")}</p>
             </div>
         </section>
           {/* Skills */}
-          <section className="grid grid-cols-1 gap-4 p-12 md:grid-cols-2 lg:grid-cols-3">
+          <h1 className='text-4xl text-center font-semibold mt-4'>My skills</h1>
+          <section className="grid grid-cols-1 gap-4 p-6 md:grid-cols-2 lg:grid-cols-3">
               <Skills title={"HTML"} url={'https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png'} text={t("skills.i1")}/>
               <Skills title={"CSS, SCSS"} url={'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png'} text={t("skills.i2")}/>
               <Skills title={"JS"} url={'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png'} text={t("skills.i3")}/>
@@ -54,8 +55,22 @@ export default function Home() {
               <Skills title={"Adobe Photoshop"} url={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png'} text={t("skills.i9")}/>
           </section>
           {/* Exp */}
-          <Experiences title={t("exp.i1.title")} url={'/../public/assets/img/project1.png'} text={t("exp.i1.text")} subtitle={t("exp.integration")} link={'https://github.com/tatadozz/tpintegrationlpdim'}/>
-          <Experiences title={t("exp.i2.title")} url={'/../public/assets/img/project2.png'} text={t("exp.i2.text")} subtitle={t("exp.integration")} link={'https://github.com/Lekta23/notreprojet'}/>
+          <h1 className='text-4xl text-center font-semibold mt-4'>My projects</h1>
+          <section className="grid grid-cols-1 gap-4 p-6 md:grid-cols-2 lg:grid-cols-3">
+            <Experiences title={t("exp.i1.title")} url={'/../public/assets/img/project1.png'} text={t("exp.i1.text")} subtitle={t("exp.integration")} link={'https://github.com/tatadozz/tpintegrationlpdim'}/>
+            <Experiences title={t("exp.i2.title")} url={'/../public/assets/img/project2.png'} text={t("exp.i2.text")} subtitle={t("exp.integration")} link={'https://github.com/Lekta23/notreprojet'}/>
+          </section>
+          {/* Blabla */}
+          <section className="mt-20 mb-10" style={{backgroundColor: "#fedd00"}}>
+            <div className="w-4/5 mx-auto py-10 md:w-3/5">
+              <h2 className="text-4xl text-center text-black font-semibold">My professional experiences</h2>
+              <p className="text-md text-center text-black py-5">I did my internship in the company WeeCoop, based in Savoie. I was able to work as a web developer. I realized in collaboration with another intern a new design (website) to propose to the customers. The design is more modern.</p>
+              <p className="text-md text-center text-black py-5">I was then hired by the same company for my sandwichcourses contract. I create websites for new clients. I'm redesigning a mobile application in native react and manipulate php.</p>
+            </div>
+        </section>
+        <section>
+          <h2 className='text2xl text-center'>Contact me : clement.lefief@outlook.com</h2>
+        </section>
           {/* Footer */}
         <Footer />
       </main>

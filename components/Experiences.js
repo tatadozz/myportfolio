@@ -7,8 +7,7 @@ function Experiences({title, url, text, subtitle, link}) {
 
     return (
         <div className="p-10">
-            <div className="max-w-sm rounded overflow-hidden shadow-lg">
-                <Image className="w-full" src={url} alt={title} width={80} height={40} layout={"responsive"}/>
+            <div className="flex flex-col justify-between max-w-sm rounded overflow-hidden shadow-lg h-80">
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">{title}</div>
                         <p className="text-gray-700 text-base">
