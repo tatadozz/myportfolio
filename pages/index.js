@@ -65,7 +65,7 @@ export default function Home() {
             <div className="w-4/5 mx-auto py-10 md:w-3/5">
               <h2 className="text-4xl text-center text-black font-semibold">My professional experiences</h2>
               <p className="text-md text-center text-black py-5">I did my internship in the company WeeCoop, based in Savoie. I was able to work as a web developer. I realized in collaboration with another intern a new design (website) to propose to the customers. The design is more modern.</p>
-              <p className="text-md text-center text-black py-5">I was then hired by the same company for my sandwichcourses contract. I create websites for new clients. I'm redesigning a mobile application in native react and manipulate php.</p>
+              <p className="text-md text-center text-black py-5">I was then hired by the same company for my sandwichcourses contract. I create websites for new clients. Im redesigning a mobile application in native react and manipulate php.</p>
             </div>
         </section>
         <section>
